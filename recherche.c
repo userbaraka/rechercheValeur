@@ -18,7 +18,7 @@ int position(int element){
     for (int i = 0; i < 4; i++)
     {
         if (element ==tab[i])
-            n=i;
+            n=i+1;
     }
     return n;
 }
