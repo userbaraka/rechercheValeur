@@ -2,10 +2,10 @@
 #include "main.h"
 void main()
 {  
-    float tab[4],a;
+    float tab[4]={24,25,26,27},a;
     int i,test;
     char c;
-            int j=0;
+    int j=0;
 
     do
     {
@@ -18,9 +18,9 @@ void main()
         while ( ((c = getchar()) != '\n') && c != EOF);
         j++;
     } while (test!=1);
-    int indiceValeurChercher=rechercherValeur(a); //appel de la fonction rechercherValeur
-    if (indiceValeurChercher==1)
-            printf("la valeur  %.2f est dans le tableau a la position %d\n",tab[indiceValeurChercher],indiceValeurChercher+1);
+    int indiceValeurChercher=rechercherValeur(tab,a); //appel de la fonction rechercherValeur
+    if (indiceValeurChercher)
+            printf("la valeur  %.2f est dans le tableau a la position %d\n",tab[indiceValeurChercher],indiceValeurChercher);
         else
             printf("l element non trouve\n");
    }

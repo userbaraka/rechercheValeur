@@ -1,1 +1,1 @@
-int rechercherValeur(float element);
+int rechercherValeur(float tab[],float element);

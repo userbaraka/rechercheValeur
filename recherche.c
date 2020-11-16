@@ -1,11 +1,11 @@
-float tab[4]={24,25,26,27};
-int rechercherValeur(float element)
+
+int rechercherValeur(float tab[],float element)
 { 
     int n=0;
     for (int i = 0; i < 4; i++)
     {
         if (element ==tab[i])
-            n=1;
+            n=i;
     }
     return n ;
 }
